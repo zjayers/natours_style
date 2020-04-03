@@ -1,0 +1,16 @@
+// Color Variables
+$color-primary: #7ed56f;
+$color-primary-light: #55c57a;
+$color-primary-dark: #28b485;
+$color-grey-dark: #777;
+$color-grey-light-1: #f7f7f7;
+$color-white: #fff;
+$color-black: #000;
+
+//GRID Variables
+$grid-width: 114rem;
+$grid-gutter-vertical: 8rem;
+$grid-gutter-horizontal: 6rem;
+$grid1of2: calc((100% - #{$grid-gutter-horizontal}) / 2);
+$grid1of3: calc((100% - 2 * #{$grid-gutter-horizontal}) / 3);
+$grid1of4: calc((100% - 3 * #{$grid-gutter-horizontal}) / 4);

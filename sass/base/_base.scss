@@ -1,0 +1,22 @@
+/* OVERALL SELECTORS */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  /* FIX ANIMATION JUMPING/SHAKING */
+  backface-visibility: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Set default font size to 10px from default browser size of 16px */
+  /* This makes for easier rem calculations and allows user to set default font size with browser */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}

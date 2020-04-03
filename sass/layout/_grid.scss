@@ -1,0 +1,46 @@
+.row {
+  max-width: $grid-width;
+  background-color: #eee;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $grid-gutter-vertical;
+  }
+
+  @include clearfix;
+
+  // SELECT ALL COLUMNS TO APPLY SAME STYLES TO EACH
+  // SELECT BY ATTRIBUTE
+  [class^="col-"] {
+    background-color: red;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $grid-gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    width: $grid1of2;
+  }
+
+  .col-1-of-3 {
+    width: $grid1of3;
+  }
+
+  .col-2-of-3 {
+    width: calc(#{$grid1of3} * 2 + #{$grid-gutter-horizontal});
+  }
+
+  .col-1-of-4 {
+    width: $grid1of4;
+  }
+
+  .col-2-of-4 {
+    width: calc(#{$grid1of4} * 2 + #{$grid-gutter-horizontal});
+  }
+
+  .col-3-of-4 {
+    width: calc(#{$grid1of4} * 3 + #{$grid-gutter-horizontal} * 2);
+  }
+}
